@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF93914514C1DE4A00928CC0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93914414C1DE4A00928CC0 /* Cocoa.framework */; };
+		AF93914F14C1DE4A00928CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF93914D14C1DE4A00928CC0 /* InfoPlist.strings */; };
+		AF93915114C1DE4A00928CC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF93915014C1DE4A00928CC0 /* main.m */; };
+		AF93915514C1DE4A00928CC0 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AF93915314C1DE4A00928CC0 /* Credits.rtf */; };
+		AF93915814C1DE4A00928CC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF93915714C1DE4A00928CC0 /* AppDelegate.m */; };
+		AF93915B14C1DE4A00928CC0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF93915914C1DE4A00928CC0 /* MainMenu.xib */; };
+		AF93916314C1DE4A00928CC0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93916214C1DE4A00928CC0 /* SenTestingKit.framework */; };
+		AF93916414C1DE4A00928CC0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93914414C1DE4A00928CC0 /* Cocoa.framework */; };
+		AF93916C14C1DE4A00928CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF93916A14C1DE4A00928CC0 /* InfoPlist.strings */; };
+		AF93916F14C1DE4A00928CC0 /* MacUSBmicroExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF93916E14C1DE4A00928CC0 /* MacUSBmicroExampleTests.m */; };
+		AF93919A14C2189400928CC0 /* OutlineNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AF93919514C2189400928CC0 /* OutlineNode.m */; };
+		AF93919B14C2189400928CC0 /* OutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF93919714C2189400928CC0 /* OutlineView.m */; };
+		AF93919C14C2189400928CC0 /* OutlineViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF93919914C2189400928CC0 /* OutlineViewDelegate.m */; };
+		AF93919F14C21CDD00928CC0 /* OutlineDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF93919E14C21CDD00928CC0 /* OutlineDataView.m */; };
+		AF9391A214C21E5C00928CC0 /* OutlineData.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9391A114C21E5C00928CC0 /* OutlineData.m */; };
+		AF9391A814C2484D00928CC0 /* ImageAndTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9391A714C2484D00928CC0 /* ImageAndTextCell.m */; };
+		AF9391BB14C33D1900928CC0 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9391BA14C33D1900928CC0 /* MainWindowController.m */; };
+		AF9391C214C33DFC00928CC0 /* OffDot.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9391C014C33DFB00928CC0 /* OffDot.png */; };
+		AF9391C314C33DFC00928CC0 /* OnDot.png in Resources */ = {isa = PBXBuildFile; fileRef = AF9391C114C33DFB00928CC0 /* OnDot.png */; };
+		AF9391C614C341BB00928CC0 /* USBmicroDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9391C514C341BA00928CC0 /* USBmicroDevice.m */; };
+		AFE9FD0014C3CA0400401167 /* USBmicroPort.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9FCFF14C3CA0400401167 /* USBmicroPort.m */; };
+		AFE9FD0314C3CD3B00401167 /* USBmicroPin.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9FD0214C3CD3B00401167 /* USBmicroPin.m */; };
+		AFE9FD0614C3E6FA00401167 /* USBmicroDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9FD0514C3E6FA00401167 /* USBmicroDevices.m */; };
+		AFE9FD0814C537BD00401167 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFE9FD0714C537BD00401167 /* MainWindow.xib */; };
+		AFE9FD0B14C66BF200401167 /* USBmicroDeviceIO.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9FD0A14C66BF200401167 /* USBmicroDeviceIO.m */; };
+		AFE9FD0D14C66C4D00401167 /* hid.c in Sources */ = {isa = PBXBuildFile; fileRef = AFE9FD0C14C66C4D00401167 /* hid.c */; };
+		AFE9FD0F14C66C9900401167 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE9FD0E14C66C9900401167 /* IOKit.framework */; };
+		AFE9FD1214C66F4F00401167 /* usbmicro.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFE9FD1114C66F4F00401167 /* usbmicro.gif */; };
+		AFE9FD1714C67A9B00401167 /* USBmicroDetectDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9FD1614C67A9B00401167 /* USBmicroDetectDevices.m */; };
+		AFE9FD1914D1057900401167 /* PortView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFE9FD1814D1057900401167 /* PortView.xib */; };
+		AFE9FD1C14D2556500401167 /* TemperatureDS18x.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9FD1B14D2556400401167 /* TemperatureDS18x.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF93916514C1DE4A00928CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF93913714C1DE4A00928CC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF93913F14C1DE4A00928CC0;
+			remoteInfo = MacUSBmicroExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF93914014C1DE4A00928CC0 /* MacUSBmicroExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacUSBmicroExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF93914414C1DE4A00928CC0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AF93914714C1DE4A00928CC0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AF93914814C1DE4A00928CC0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AF93914914C1DE4A00928CC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF93914C14C1DE4A00928CC0 /* MacUSBmicroExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacUSBmicroExample-Info.plist"; sourceTree = "<group>"; };
+		AF93914E14C1DE4A00928CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF93915014C1DE4A00928CC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF93915214C1DE4A00928CC0 /* MacUSBmicroExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacUSBmicroExample-Prefix.pch"; sourceTree = "<group>"; };
+		AF93915414C1DE4A00928CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AF93915614C1DE4A00928CC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF93915714C1DE4A00928CC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF93915A14C1DE4A00928CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AF93916114C1DE4A00928CC0 /* MacUSBmicroExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacUSBmicroExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF93916214C1DE4A00928CC0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		AF93916914C1DE4A00928CC0 /* MacUSBmicroExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacUSBmicroExampleTests-Info.plist"; sourceTree = "<group>"; };
+		AF93916B14C1DE4A00928CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF93916D14C1DE4A00928CC0 /* MacUSBmicroExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacUSBmicroExampleTests.h; sourceTree = "<group>"; };
+		AF93916E14C1DE4A00928CC0 /* MacUSBmicroExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacUSBmicroExampleTests.m; sourceTree = "<group>"; };
+		AF93919414C2189400928CC0 /* OutlineNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutlineNode.h; sourceTree = SOURCE_ROOT; };
+		AF93919514C2189400928CC0 /* OutlineNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutlineNode.m; sourceTree = SOURCE_ROOT; };
+		AF93919614C2189400928CC0 /* OutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutlineView.h; sourceTree = SOURCE_ROOT; };
+		AF93919714C2189400928CC0 /* OutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutlineView.m; sourceTree = SOURCE_ROOT; };
+		AF93919814C2189400928CC0 /* OutlineViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutlineViewDelegate.h; sourceTree = SOURCE_ROOT; };
+		AF93919914C2189400928CC0 /* OutlineViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutlineViewDelegate.m; sourceTree = SOURCE_ROOT; };
+		AF93919D14C21CDD00928CC0 /* OutlineDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutlineDataView.h; sourceTree = SOURCE_ROOT; };
+		AF93919E14C21CDD00928CC0 /* OutlineDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutlineDataView.m; sourceTree = SOURCE_ROOT; };
+		AF9391A014C21E5C00928CC0 /* OutlineData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutlineData.h; sourceTree = SOURCE_ROOT; };
+		AF9391A114C21E5C00928CC0 /* OutlineData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutlineData.m; sourceTree = SOURCE_ROOT; };
+		AF9391A614C2484D00928CC0 /* ImageAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageAndTextCell.h; path = ../ImageAndTextCell.h; sourceTree = "<group>"; };
+		AF9391A714C2484D00928CC0 /* ImageAndTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageAndTextCell.m; path = ../ImageAndTextCell.m; sourceTree = "<group>"; };
+		AF9391B914C33D1900928CC0 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainWindowController.h; path = MacUSBmicroExample/MainWindowController.h; sourceTree = SOURCE_ROOT; };
+		AF9391BA14C33D1900928CC0 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		AF9391C014C33DFB00928CC0 /* OffDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OffDot.png; sourceTree = "<group>"; };
+		AF9391C114C33DFB00928CC0 /* OnDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OnDot.png; sourceTree = "<group>"; };
+		AF9391C414C341BA00928CC0 /* USBmicroDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBmicroDevice.h; sourceTree = "<group>"; };
+		AF9391C514C341BA00928CC0 /* USBmicroDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBmicroDevice.m; sourceTree = "<group>"; };
+		AFE9FCFE14C3CA0400401167 /* USBmicroPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBmicroPort.h; sourceTree = "<group>"; };
+		AFE9FCFF14C3CA0400401167 /* USBmicroPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBmicroPort.m; sourceTree = "<group>"; };
+		AFE9FD0114C3CD3B00401167 /* USBmicroPin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBmicroPin.h; sourceTree = "<group>"; };
+		AFE9FD0214C3CD3B00401167 /* USBmicroPin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBmicroPin.m; sourceTree = "<group>"; };
+		AFE9FD0414C3E6FA00401167 /* USBmicroDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = USBmicroDevices.h; path = ../USBmicroDevices.h; sourceTree = "<group>"; };
+		AFE9FD0514C3E6FA00401167 /* USBmicroDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = USBmicroDevices.m; path = ../USBmicroDevices.m; sourceTree = "<group>"; };
+		AFE9FD0714C537BD00401167 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = ../MainWindow.xib; sourceTree = "<group>"; };
+		AFE9FD0914C66BF200401167 /* USBmicroDeviceIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBmicroDeviceIO.h; sourceTree = "<group>"; };
+		AFE9FD0A14C66BF200401167 /* USBmicroDeviceIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBmicroDeviceIO.m; sourceTree = "<group>"; };
+		AFE9FD0C14C66C4D00401167 /* hid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hid.c; sourceTree = "<group>"; };
+		AFE9FD0E14C66C9900401167 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		AFE9FD1114C66F4F00401167 /* usbmicro.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = usbmicro.gif; sourceTree = "<group>"; };
+		AFE9FD1414C6761A00401167 /* hidapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hidapi.h; sourceTree = "<group>"; };
+		AFE9FD1514C67A9B00401167 /* USBmicroDetectDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBmicroDetectDevices.h; sourceTree = "<group>"; };
+		AFE9FD1614C67A9B00401167 /* USBmicroDetectDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USBmicroDetectDevices.m; sourceTree = "<group>"; };
+		AFE9FD1814D1057900401167 /* PortView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortView.xib; sourceTree = "<group>"; };
+		AFE9FD1A14D2556300401167 /* TemperatureDS18x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureDS18x.h; sourceTree = "<group>"; };
+		AFE9FD1B14D2556400401167 /* TemperatureDS18x.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureDS18x.m; sourceTree = "<group>"; };
+		AFE9FD1D14D3B9A100401167 /* USBmicroEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USBmicroEnum.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF93913D14C1DE4A00928CC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFE9FD0F14C66C9900401167 /* IOKit.framework in Frameworks */,
+				AF93914514C1DE4A00928CC0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF93915D14C1DE4A00928CC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF93916314C1DE4A00928CC0 /* SenTestingKit.framework in Frameworks */,
+				AF93916414C1DE4A00928CC0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF93913514C1DE4A00928CC0 = {
+			isa = PBXGroup;
+			children = (
+				AFE9FD0E14C66C9900401167 /* IOKit.framework */,
+				AF93914A14C1DE4A00928CC0 /* MacUSBmicroExample */,
+				AF93916714C1DE4A00928CC0 /* MacUSBmicroExampleTests */,
+				AF93914314C1DE4A00928CC0 /* Frameworks */,
+				AF93914114C1DE4A00928CC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF93914114C1DE4A00928CC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF93914014C1DE4A00928CC0 /* MacUSBmicroExample.app */,
+				AF93916114C1DE4A00928CC0 /* MacUSBmicroExampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF93914314C1DE4A00928CC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF93914414C1DE4A00928CC0 /* Cocoa.framework */,
+				AF93916214C1DE4A00928CC0 /* SenTestingKit.framework */,
+				AF93914614C1DE4A00928CC0 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF93914614C1DE4A00928CC0 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF93914714C1DE4A00928CC0 /* AppKit.framework */,
+				AF93914814C1DE4A00928CC0 /* CoreData.framework */,
+				AF93914914C1DE4A00928CC0 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AF93914A14C1DE4A00928CC0 /* MacUSBmicroExample */ = {
+			isa = PBXGroup;
+			children = (
+				AF9391B414C298AB00928CC0 /* Resources */,
+				AF9391A914C25CA100928CC0 /* Outline */,
+				AF93915614C1DE4A00928CC0 /* AppDelegate.h */,
+				AF93915714C1DE4A00928CC0 /* AppDelegate.m */,
+				AF93915914C1DE4A00928CC0 /* MainMenu.xib */,
+				AFE9FD0714C537BD00401167 /* MainWindow.xib */,
+				AF9391B914C33D1900928CC0 /* MainWindowController.h */,
+				AF9391BA14C33D1900928CC0 /* MainWindowController.m */,
+				AFE9FD0C14C66C4D00401167 /* hid.c */,
+				AFE9FD1814D1057900401167 /* PortView.xib */,
+				AFE9FD1414C6761A00401167 /* hidapi.h */,
+				AFE9FD1A14D2556300401167 /* TemperatureDS18x.h */,
+				AFE9FD1B14D2556400401167 /* TemperatureDS18x.m */,
+				AFE9FD1514C67A9B00401167 /* USBmicroDetectDevices.h */,
+				AFE9FD1614C67A9B00401167 /* USBmicroDetectDevices.m */,
+				AF9391C414C341BA00928CC0 /* USBmicroDevice.h */,
+				AF9391C514C341BA00928CC0 /* USBmicroDevice.m */,
+				AFE9FD0914C66BF200401167 /* USBmicroDeviceIO.h */,
+				AFE9FD0A14C66BF200401167 /* USBmicroDeviceIO.m */,
+				AFE9FD0414C3E6FA00401167 /* USBmicroDevices.h */,
+				AFE9FD1D14D3B9A100401167 /* USBmicroEnum.h */,
+				AFE9FD0514C3E6FA00401167 /* USBmicroDevices.m */,
+				AFE9FD0114C3CD3B00401167 /* USBmicroPin.h */,
+				AFE9FD0214C3CD3B00401167 /* USBmicroPin.m */,
+				AFE9FCFE14C3CA0400401167 /* USBmicroPort.h */,
+				AFE9FCFF14C3CA0400401167 /* USBmicroPort.m */,
+				AF93914B14C1DE4A00928CC0 /* Supporting Files */,
+			);
+			path = MacUSBmicroExample;
+			sourceTree = "<group>";
+		};
+		AF93914B14C1DE4A00928CC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF93914C14C1DE4A00928CC0 /* MacUSBmicroExample-Info.plist */,
+				AF93914D14C1DE4A00928CC0 /* InfoPlist.strings */,
+				AF93915014C1DE4A00928CC0 /* main.m */,
+				AF93915214C1DE4A00928CC0 /* MacUSBmicroExample-Prefix.pch */,
+				AF93915314C1DE4A00928CC0 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF93916714C1DE4A00928CC0 /* MacUSBmicroExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF93916D14C1DE4A00928CC0 /* MacUSBmicroExampleTests.h */,
+				AF93916E14C1DE4A00928CC0 /* MacUSBmicroExampleTests.m */,
+				AF93916814C1DE4A00928CC0 /* Supporting Files */,
+			);
+			path = MacUSBmicroExampleTests;
+			sourceTree = "<group>";
+		};
+		AF93916814C1DE4A00928CC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF93916914C1DE4A00928CC0 /* MacUSBmicroExampleTests-Info.plist */,
+				AF93916A14C1DE4A00928CC0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF9391A914C25CA100928CC0 /* Outline */ = {
+			isa = PBXGroup;
+			children = (
+				AF9391A614C2484D00928CC0 /* ImageAndTextCell.h */,
+				AF9391A714C2484D00928CC0 /* ImageAndTextCell.m */,
+				AF9391A014C21E5C00928CC0 /* OutlineData.h */,
+				AF9391A114C21E5C00928CC0 /* OutlineData.m */,
+				AF93919D14C21CDD00928CC0 /* OutlineDataView.h */,
+				AF93919E14C21CDD00928CC0 /* OutlineDataView.m */,
+				AF93919414C2189400928CC0 /* OutlineNode.h */,
+				AF93919514C2189400928CC0 /* OutlineNode.m */,
+				AF93919614C2189400928CC0 /* OutlineView.h */,
+				AF93919714C2189400928CC0 /* OutlineView.m */,
+				AF93919814C2189400928CC0 /* OutlineViewDelegate.h */,
+				AF93919914C2189400928CC0 /* OutlineViewDelegate.m */,
+			);
+			name = Outline;
+			sourceTree = "<group>";
+		};
+		AF9391B414C298AB00928CC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AFE9FD1114C66F4F00401167 /* usbmicro.gif */,
+				AF9391C014C33DFB00928CC0 /* OffDot.png */,
+				AF9391C114C33DFB00928CC0 /* OnDot.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF93913F14C1DE4A00928CC0 /* MacUSBmicroExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF93917214C1DE4A00928CC0 /* Build configuration list for PBXNativeTarget "MacUSBmicroExample" */;
+			buildPhases = (
+				AF93913C14C1DE4A00928CC0 /* Sources */,
+				AF93913D14C1DE4A00928CC0 /* Frameworks */,
+				AF93913E14C1DE4A00928CC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacUSBmicroExample;
+			productName = MacUSBmicroExample;
+			productReference = AF93914014C1DE4A00928CC0 /* MacUSBmicroExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF93916014C1DE4A00928CC0 /* MacUSBmicroExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF93917514C1DE4A00928CC0 /* Build configuration list for PBXNativeTarget "MacUSBmicroExampleTests" */;
+			buildPhases = (
+				AF93915C14C1DE4A00928CC0 /* Sources */,
+				AF93915D14C1DE4A00928CC0 /* Frameworks */,
+				AF93915E14C1DE4A00928CC0 /* Resources */,
+				AF93915F14C1DE4A00928CC0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF93916614C1DE4A00928CC0 /* PBXTargetDependency */,
+			);
+			name = MacUSBmicroExampleTests;
+			productName = MacUSBmicroExampleTests;
+			productReference = AF93916114C1DE4A00928CC0 /* MacUSBmicroExampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF93913714C1DE4A00928CC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "StrandControl, LLC";
+			};
+			buildConfigurationList = AF93913A14C1DE4A00928CC0 /* Build configuration list for PBXProject "MacUSBmicroExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AF93913514C1DE4A00928CC0;
+			productRefGroup = AF93914114C1DE4A00928CC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF93913F14C1DE4A00928CC0 /* MacUSBmicroExample */,
+				AF93916014C1DE4A00928CC0 /* MacUSBmicroExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF93913E14C1DE4A00928CC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF93914F14C1DE4A00928CC0 /* InfoPlist.strings in Resources */,
+				AF93915514C1DE4A00928CC0 /* Credits.rtf in Resources */,
+				AF93915B14C1DE4A00928CC0 /* MainMenu.xib in Resources */,
+				AF9391C214C33DFC00928CC0 /* OffDot.png in Resources */,
+				AF9391C314C33DFC00928CC0 /* OnDot.png in Resources */,
+				AFE9FD0814C537BD00401167 /* MainWindow.xib in Resources */,
+				AFE9FD1214C66F4F00401167 /* usbmicro.gif in Resources */,
+				AFE9FD1914D1057900401167 /* PortView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF93915E14C1DE4A00928CC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF93916C14C1DE4A00928CC0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF93915F14C1DE4A00928CC0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF93913C14C1DE4A00928CC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF93915114C1DE4A00928CC0 /* main.m in Sources */,
+				AF93915814C1DE4A00928CC0 /* AppDelegate.m in Sources */,
+				AF93919A14C2189400928CC0 /* OutlineNode.m in Sources */,
+				AF93919B14C2189400928CC0 /* OutlineView.m in Sources */,
+				AF93919C14C2189400928CC0 /* OutlineViewDelegate.m in Sources */,
+				AF93919F14C21CDD00928CC0 /* OutlineDataView.m in Sources */,
+				AF9391A214C21E5C00928CC0 /* OutlineData.m in Sources */,
+				AF9391A814C2484D00928CC0 /* ImageAndTextCell.m in Sources */,
+				AF9391BB14C33D1900928CC0 /* MainWindowController.m in Sources */,
+				AF9391C614C341BB00928CC0 /* USBmicroDevice.m in Sources */,
+				AFE9FD0014C3CA0400401167 /* USBmicroPort.m in Sources */,
+				AFE9FD0314C3CD3B00401167 /* USBmicroPin.m in Sources */,
+				AFE9FD0614C3E6FA00401167 /* USBmicroDevices.m in Sources */,
+				AFE9FD0B14C66BF200401167 /* USBmicroDeviceIO.m in Sources */,
+				AFE9FD0D14C66C4D00401167 /* hid.c in Sources */,
+				AFE9FD1714C67A9B00401167 /* USBmicroDetectDevices.m in Sources */,
+				AFE9FD1C14D2556500401167 /* TemperatureDS18x.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF93915C14C1DE4A00928CC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF93916F14C1DE4A00928CC0 /* MacUSBmicroExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF93916614C1DE4A00928CC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF93913F14C1DE4A00928CC0 /* MacUSBmicroExample */;
+			targetProxy = AF93916514C1DE4A00928CC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF93914D14C1DE4A00928CC0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF93914E14C1DE4A00928CC0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF93915314C1DE4A00928CC0 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF93915414C1DE4A00928CC0 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AF93915914C1DE4A00928CC0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF93915A14C1DE4A00928CC0 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AF93916A14C1DE4A00928CC0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF93916B14C1DE4A00928CC0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF93917014C1DE4A00928CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/System/Library/Frameworks/IOKit.framework,
+					/System/Library/Frameworks/CoreFoundation.framework,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /System/Library/Frameworks/IOKit.framework/Headers/usb;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "/System/Library/Frameworks/CoreFoundation.framework /System/Library/Frameworks/IOKit.framework";
+			};
+			name = Debug;
+		};
+		AF93917114C1DE4A00928CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					/System/Library/Frameworks/IOKit.framework,
+					/System/Library/Frameworks/CoreFoundation.framework,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /System/Library/Frameworks/IOKit.framework/Headers/usb;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "/System/Library/Frameworks/CoreFoundation.framework /System/Library/Frameworks/IOKit.framework";
+			};
+			name = Release;
+		};
+		AF93917314C1DE4A00928CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /System/Library/Frameworks/IOKit.framework;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacUSBmicroExample/MacUSBmicroExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = /System/Library/Frameworks/IOKit.framework/Headers/usb;
+				INFOPLIST_FILE = "MacUSBmicroExample/MacUSBmicroExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AF93917414C1DE4A00928CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /System/Library/Frameworks/IOKit.framework;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacUSBmicroExample/MacUSBmicroExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = /System/Library/Frameworks/IOKit.framework/Headers/usb;
+				INFOPLIST_FILE = "MacUSBmicroExample/MacUSBmicroExample-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AF93917614C1DE4A00928CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacUSBmicroExample.app/Contents/MacOS/MacUSBmicroExample";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacUSBmicroExample/MacUSBmicroExample-Prefix.pch";
+				INFOPLIST_FILE = "MacUSBmicroExampleTests/MacUSBmicroExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AF93917714C1DE4A00928CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacUSBmicroExample.app/Contents/MacOS/MacUSBmicroExample";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacUSBmicroExample/MacUSBmicroExample-Prefix.pch";
+				INFOPLIST_FILE = "MacUSBmicroExampleTests/MacUSBmicroExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF93913A14C1DE4A00928CC0 /* Build configuration list for PBXProject "MacUSBmicroExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF93917014C1DE4A00928CC0 /* Debug */,
+				AF93917114C1DE4A00928CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF93917214C1DE4A00928CC0 /* Build configuration list for PBXNativeTarget "MacUSBmicroExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF93917314C1DE4A00928CC0 /* Debug */,
+				AF93917414C1DE4A00928CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF93917514C1DE4A00928CC0 /* Build configuration list for PBXNativeTarget "MacUSBmicroExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF93917614C1DE4A00928CC0 /* Debug */,
+				AF93917714C1DE4A00928CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF93913714C1DE4A00928CC0 /* Project object */;
+}
